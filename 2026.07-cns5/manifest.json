@@ -1,0 +1,43 @@
+{
+  "format_version": 1,
+  "catalog_version": "2026.07-cns5",
+  "generated_at": "2026-07-06T00:00:00Z",
+  "shells": [
+    {
+      "index": 0,
+      "path": "shell-000",
+      "outer_radius_pc": 25.0,
+      "system_count": 5019,
+      "shards": ["systems-000.json.gz", "systems-001.json.gz", "systems-002.json.gz"],
+      "files": {
+        "positions.bin": {
+          "bytes": 60228,
+          "sha256": "93ec2c6179526fdd52e11aae9ea3909d5468651202f4b88ed4df69fe45074974"
+        },
+        "facts.bin": {
+          "bytes": 20076,
+          "sha256": "037006a58cc39ab9e978171d8fb60ddcab78da1ff2083cf4c3b4678a862f2784"
+        },
+        "systems-000.json.gz": {
+          "bytes": 58667,
+          "sha256": "468927293c0d533365e1026d823576f09e9b25d7c55869563b729eb96023badd"
+        },
+        "systems-001.json.gz": {
+          "bytes": 59337,
+          "sha256": "d43f801aa0367b005cc63e48adec3ccc3a18d2801283981d48159410e0187861"
+        },
+        "systems-002.json.gz": {
+          "bytes": 30603,
+          "sha256": "3e98cc83bd7343db90084f22b9fe91e714b9bee0b0d5185096b777947719039e"
+        }
+      }
+    }
+  ],
+  "provenance": [
+    "CNS5 (Golovin et al. 2023), GAVO TAP table cns5.main; VizieR J/A+A/670/A19",
+    "source csv sha256=00bb1b1a2092b832373ed6474253793c123c37eba99753065739d2f0463a5b17 (5909 component rows)",
+    "shell-000 cut: system primary parallax >= 40.0 mas (25 pc)",
+    "spectral classes are photometric estimates (G-RP + CMD cuts); provisional",
+    "exoplanet/hz/flare flags pending cross-match slices; Sol injected manually"
+  ]
+}

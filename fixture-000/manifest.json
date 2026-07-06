@@ -1,0 +1,32 @@
+{
+  "format_version": 1,
+  "catalog_version": "fixture-000",
+  "generated_at": "2026-07-06T00:00:00Z",
+  "shells": [
+    {
+      "index": 0,
+      "path": "shell-000",
+      "outer_radius_pc": 25.0,
+      "system_count": 16,
+      "shards": ["systems-000.json.gz"],
+      "files": {
+        "positions.bin": {
+          "bytes": 192,
+          "sha256": "f02752f9a8851a8cae73fd716c15be9ebb3a233b1d1815a9d482c46c079b3bdc"
+        },
+        "facts.bin": {
+          "bytes": 64,
+          "sha256": "36ff37a433a7866d89b66a6b8353fea9be0e0c4a86b9c26827fe162d151ba37a"
+        },
+        "systems-000.json.gz": {
+          "bytes": 834,
+          "sha256": "9b3cf833c1def6d2cafa8ebdb7716d67eaa493ef5ebb578c1dc3507349867f1a"
+        }
+      }
+    }
+  ],
+  "provenance": [
+    "hand-rolled fixture mirroring waymancer-core/src/fixtures/systems.ts",
+    "positions are approximate (fixture quality); not astrometry"
+  ]
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Waymancer — fly through the real 25 parsec stellar neighborhood. 5,000+ star systems from the Fifth Catalogue of Nearby Stars."
+    />
+    <title>Waymancer — the local stellar neighborhood</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #030409;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+      }
+      #map {
+        width: 100%;
+        height: 100%;
+        display: block;
+        outline: none;
+      }
+      #hud {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        color: #cdd6e4;
+        background: rgba(10, 14, 24, 0.72);
+        border: 1px solid rgba(90, 110, 140, 0.35);
+        border-radius: 8px;
+        padding: 10px 14px;
+        max-width: 340px;
+      }
+      #hud h1 {
+        font-size: 15px;
+        margin: 0 0 4px;
+        letter-spacing: 0.06em;
+      }
+      #hud p {
+        font-size: 12px;
+        margin: 2px 0;
+        color: #93a1b8;
+      }
+      #hud .selected {
+        color: #e8eef8;
+        font-size: 13px;
+        min-height: 1.2em;
+      }
+      #hud button {
+        margin-top: 6px;
+        font-size: 12px;
+        color: #cdd6e4;
+        background: rgba(60, 80, 110, 0.4);
+        border: 1px solid rgba(90, 110, 140, 0.5);
+        border-radius: 5px;
+        padding: 3px 10px;
+        cursor: pointer;
+      }
+      #hud button:hover {
+        background: rgba(80, 105, 140, 0.5);
+      }
+    </style>
+    <script type="module" crossorigin src="/waymancer/assets/index-BxHX34dm.js"></script>
+  </head>
+  <body>
+    <canvas id="map" touch-action="none"></canvas>
+    <div id="hud">
+      <h1>WAYMANCER</h1>
+      <p id="dataset">Loading the neighborhood…</p>
+      <p>Drag to orbit · wheel to zoom · click a star to fly in · Esc to fly home</p>
+      <p class="selected" id="selection">Nothing selected</p>
+      <button id="home" type="button">Back to Sol</button>
+    </div>
+  </body>
+</html>
