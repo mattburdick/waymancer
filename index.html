@@ -62,8 +62,91 @@
       #hud button:hover {
         background: rgba(80, 105, 140, 0.5);
       }
+      /* System view chrome (built by @worldmancer/waymancer-core) */
+      .wm-system-ui button,
+      .wm-system-ui select {
+        font-size: 12px;
+        color: #cdd6e4;
+        background: rgba(20, 28, 44, 0.9);
+        border: 1px solid rgba(90, 110, 140, 0.5);
+        border-radius: 5px;
+        padding: 3px 10px;
+        cursor: pointer;
+      }
+      .wm-system-breadcrumb {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        color: #e8eef8;
+        background: rgba(10, 14, 24, 0.72);
+        border: 1px solid rgba(90, 110, 140, 0.35);
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+      .wm-system-timebar {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        color: #93a1b8;
+        background: rgba(10, 14, 24, 0.72);
+        border: 1px solid rgba(90, 110, 140, 0.35);
+        border-radius: 8px;
+        padding: 8px 12px;
+        font-size: 12px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .wm-system-carousel {
+        position: fixed;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 4px;
+      }
+      .wm-system-card {
+        flex: 0 0 auto;
+        width: 170px;
+        text-align: left;
+        color: #cdd6e4;
+        background: rgba(10, 14, 24, 0.82);
+        border: 1px solid rgba(90, 110, 140, 0.4);
+        border-radius: 8px;
+        padding: 8px 10px;
+        cursor: pointer;
+        font-size: 11px;
+        line-height: 1.45;
+      }
+      .wm-system-card:hover {
+        border-color: rgba(140, 170, 210, 0.8);
+      }
+      .wm-system-card strong {
+        display: block;
+        font-size: 12px;
+        color: #e8eef8;
+      }
+      .wm-system-card em {
+        display: block;
+        color: #7f8ea6;
+        font-style: normal;
+        margin-bottom: 3px;
+      }
+      .wm-system-label {
+        top: 0;
+        left: 0;
+        color: #d7dfeb;
+        font-size: 11px;
+        letter-spacing: 0.03em;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+        white-space: nowrap;
+        will-change: transform;
+      }
     </style>
-    <script type="module" crossorigin src="/waymancer/assets/index-BcSlFWTN.js"></script>
+    <script type="module" crossorigin src="/waymancer/assets/index-B8efoyVf.js"></script>
   </head>
   <body>
     <canvas id="map" touch-action="none"></canvas>
@@ -72,7 +155,10 @@
       <p id="dataset">Loading the neighborhood…</p>
       <p>Drag to orbit · wheel to zoom · click a star to fly in · Esc to fly home</p>
       <p class="selected" id="selection">Nothing selected</p>
-      <button id="home" type="button">Back to Sol</button>
+      <p>
+        <button id="home" type="button">Back to Sol</button>
+        <button id="view-system" type="button" hidden>View system ▸</button>
+      </p>
     </div>
   </body>
 </html>
