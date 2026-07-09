@@ -1,0 +1,45 @@
+{
+  "format_version": 1,
+  "catalog_version": "2026.07-cns5-r4",
+  "generated_at": "2026-07-06T00:00:00Z",
+  "shells": [
+    {
+      "index": 0,
+      "path": "shell-000",
+      "outer_radius_pc": 25.0,
+      "system_count": 5019,
+      "shards": ["systems-000.json.gz", "systems-001.json.gz", "systems-002.json.gz"],
+      "files": {
+        "positions.bin": {
+          "bytes": 60228,
+          "sha256": "93ec2c6179526fdd52e11aae9ea3909d5468651202f4b88ed4df69fe45074974"
+        },
+        "facts.bin": {
+          "bytes": 20076,
+          "sha256": "5c41eb2acdc6d2db6400ef8065a8ea39f042a9e96d06426fd30e0b817f795ea1"
+        },
+        "systems-000.json.gz": {
+          "bytes": 78917,
+          "sha256": "8110711558e94dfb4c473ffe954be9a228ad27647d54db75a678bcfa81b70c0d"
+        },
+        "systems-001.json.gz": {
+          "bytes": 71569,
+          "sha256": "ea64056f3bcb27d4c25906ab1d8146955db4eca102e0963b22b74bcf81fdb2fa"
+        },
+        "systems-002.json.gz": {
+          "bytes": 35105,
+          "sha256": "e649b60b23c91c0fd0b5b706e7eccebbd2309fe1c397702a789614cb2ab9b174"
+        }
+      }
+    }
+  ],
+  "provenance": [
+    "CNS5 (Golovin et al. 2023), GAVO TAP table cns5.main; VizieR J/A+A/670/A19",
+    "source csv sha256=00bb1b1a2092b832373ed6474253793c123c37eba99753065739d2f0463a5b17 (5909 component rows)",
+    "shell-000 cut: system primary parallax >= 40.0 mas (25 pc)",
+    "names/spectral types/flare flags: SIMBAD (CDS) via TAP, ident join on CNS5 ids",
+    "exoplanet/HZ flags: NASA Exoplanet Archive pscomppars via TAP",
+    "spectral classes fall back to photometric estimates where SIMBAD sp_type is absent",
+    "Sol injected manually; system ids stable across catalog revisions"
+  ]
+}
