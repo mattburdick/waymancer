@@ -19,16 +19,16 @@
           "sha256": "5c41eb2acdc6d2db6400ef8065a8ea39f042a9e96d06426fd30e0b817f795ea1"
         },
         "systems-000.json.gz": {
-          "bytes": 197203,
-          "sha256": "2f46c68ab8ad97c4bb8bab20c96b2816af82414ebd3925fafb3f556c905b914f"
+          "bytes": 203629,
+          "sha256": "155fb0860d81cbc05537775bcfd5fa4fdbad08e07caaacf021e106cb5a0107d0"
         },
         "systems-001.json.gz": {
-          "bytes": 175459,
-          "sha256": "ec4c08df94a85293d6a1d342bef26f35b013390d6e50d0615e196d7c8820aa3c"
+          "bytes": 181439,
+          "sha256": "24281f17b58d5517db1bcbe34294b724aef77fc708176f78ffeae01ee6a0dcfc"
         },
         "systems-002.json.gz": {
-          "bytes": 83552,
-          "sha256": "45c1fa7f3146113e74efa77d8326cc34ea02f5d837650c67ed582f37db22b294"
+          "bytes": 87906,
+          "sha256": "66fcdf2215467da0f292b6f48be0c52e065efb7545fa8a6691f5bf6684101f6a"
         }
       }
     }
@@ -38,6 +38,7 @@
     "source csv sha256=00bb1b1a2092b832373ed6474253793c123c37eba99753065739d2f0463a5b17 (5909 component rows)",
     "shell-000 cut: system primary parallax >= 40.0 mas (25 pc)",
     "names/spectral types/flare flags: SIMBAD (CDS) via TAP, ident join on CNS5 ids",
+    "official host/planet display names: IAU NameExoWorlds 2019 and 2022 approved-name workbooks",
     "hierarchies/component masses/orbits: Multiple Star Catalog 2026-06-19, exact WDS join",
     "exoplanet/HZ flags: NASA Exoplanet Archive pscomppars via TAP",
     "spectral classes fall back to photometric estimates where SIMBAD sp_type is absent",
