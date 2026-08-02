@@ -19,16 +19,16 @@
           "sha256": "5c41eb2acdc6d2db6400ef8065a8ea39f042a9e96d06426fd30e0b817f795ea1"
         },
         "systems-000.json.gz": {
-          "bytes": 203629,
-          "sha256": "155fb0860d81cbc05537775bcfd5fa4fdbad08e07caaacf021e106cb5a0107d0"
+          "bytes": 209869,
+          "sha256": "6b557ec4d6c859e89bdb598b55e2bf7b51aebf496beece70f2fae8a752c1eac1"
         },
         "systems-001.json.gz": {
-          "bytes": 181439,
-          "sha256": "24281f17b58d5517db1bcbe34294b724aef77fc708176f78ffeae01ee6a0dcfc"
+          "bytes": 185805,
+          "sha256": "b941737381e97ace6721823cf26b2bcbcd821ddd9849fe3dd626a9045389a22a"
         },
         "systems-002.json.gz": {
-          "bytes": 87906,
-          "sha256": "66fcdf2215467da0f292b6f48be0c52e065efb7545fa8a6691f5bf6684101f6a"
+          "bytes": 88924,
+          "sha256": "f1b1c40c8186d085c86388c7370b380a05795980b3bb2d8d94c1010d2b7aced8"
         }
       }
     }
@@ -40,6 +40,8 @@
     "names/spectral types/flare flags: SIMBAD (CDS) via TAP, ident join on CNS5 ids",
     "official host/planet display names: IAU NameExoWorlds 2019 and 2022 approved-name workbooks",
     "hierarchies/component masses/orbits: Multiple Star Catalog 2026-06-19, exact WDS join",
+    "binary projected separations fall back to CNS5 component astrometry when MSC geometry is unavailable",
+    "remaining unknown stellar relationships use a 1 AU synthetic separation and are explicitly marked estimated",
     "exoplanet/HZ flags: NASA Exoplanet Archive pscomppars via TAP",
     "spectral classes fall back to photometric estimates where SIMBAD sp_type is absent",
     "Sol injected manually; system ids stable across catalog revisions"
