@@ -1,0 +1,67 @@
+{
+  "format_version": 1,
+  "catalog_version": "2026.08-cns5-r9",
+  "generated_at": "2026-08-03T00:00:00Z",
+  "shells": [
+    {
+      "index": 0,
+      "path": "shell-000",
+      "outer_radius_pc": 25.0,
+      "system_count": 5019,
+      "shards": ["systems-000.json.gz", "systems-001.json.gz", "systems-002.json.gz"],
+      "files": {
+        "positions.bin": {
+          "bytes": 60228,
+          "sha256": "93ec2c6179526fdd52e11aae9ea3909d5468651202f4b88ed4df69fe45074974"
+        },
+        "facts.bin": {
+          "bytes": 20076,
+          "sha256": "1c99670637e777c350382d9110e3fffe02de631e014272ba60e8640f1503fb44"
+        },
+        "motion.bin": {
+          "bytes": 240912,
+          "sha256": "7cd9442f5055ecc76071fafb57e7c31b4676b0fc097efc879c2ce04b58713d73"
+        },
+        "motion-quality.bin": {
+          "bytes": 20076,
+          "sha256": "3212d85f3d0fe964ffd541b2264214733aca9e8781ee9e1c9b35ef8e9f52744c"
+        },
+        "systems-000.json.gz": {
+          "bytes": 227722,
+          "sha256": "94c4e29f3b37e962786533282971ea5036c193394f7cf0ae572fca4ba0746ef1"
+        },
+        "systems-001.json.gz": {
+          "bytes": 200709,
+          "sha256": "00cf0a0f9d67440cf434187b48a346f6b1e8730fab9db929f6bb65319df7ce5a"
+        },
+        "systems-002.json.gz": {
+          "bytes": 93654,
+          "sha256": "a60337d86a7dbc5d309331c912be3a81c40d50619b29197b3d106173dcaa0950"
+        }
+      },
+      "motion": {
+        "format_version": 1,
+        "reference_epoch": "catalog-source",
+        "records": "motion.bin",
+        "quality": "motion-quality.bin",
+        "record_count": 5019
+      }
+    }
+  ],
+  "provenance": [
+    "CNS5 (Golovin et al. 2023), GAVO TAP table cns5.main; VizieR J/A+A/670/A19",
+    "source csv sha256=6faa4bb68648757f2d10f97a82a76edfc0007e79e9298a430697daec080d970a (5909 component rows)",
+    "shell-000 cut: system primary parallax >= 40.0 mas (25 pc)",
+    "names/spectral types/flare flags: SIMBAD (CDS) via TAP, ident join on CNS5 ids",
+    "official host/planet display names: IAU NameExoWorlds 2019 and 2022 approved-name workbooks",
+    "visual pair membership and latest snapshot geometry: WDS B/wds, VizieR TAP snapshot 2026-08-03",
+    "ultracool binary component types: UltracoolSheet 2.1.0, Zenodo record 15802304",
+    "hierarchies/component masses/orbits: Multiple Star Catalog 2026-06-19, exact WDS join",
+    "binary projected separations fall back to CNS5 component astrometry when MSC geometry is unavailable",
+    "remaining unknown stellar relationships use a 1 AU synthetic separation and are explicitly marked estimated",
+    "exoplanet/HZ flags: NASA Exoplanet Archive pscomppars via TAP",
+    "spectral classes fall back to photometric estimates where SIMBAD sp_type is absent",
+    "stellar motion: CNS5 proper motion and curated radial velocity; missing radial velocity remains tangential-only",
+    "Sol injected manually; system ids stable across catalog revisions"
+  ]
+}

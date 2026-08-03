@@ -18,10 +18,25 @@
           "bytes": 64,
           "sha256": "36ff37a433a7866d89b66a6b8353fea9be0e0c4a86b9c26827fe162d151ba37a"
         },
+        "motion.bin": {
+          "bytes": 768,
+          "sha256": "20e0998bf4bf23970636601537f96706b0cb25777da7ea7bdbcb7ca05833bc74"
+        },
+        "motion-quality.bin": {
+          "bytes": 64,
+          "sha256": "71e670192f1f3f634b0ebaa0d6695339de02bd86008b9d7c250aeb1239b21430"
+        },
         "systems-000.json.gz": {
           "bytes": 868,
           "sha256": "d515950c491aec3aa5b04d1254fb2627bc6663b0a6e38d23ac0f8943ce127699"
         }
+      },
+      "motion": {
+        "format_version": 1,
+        "reference_epoch": "catalog-source",
+        "records": "motion.bin",
+        "quality": "motion-quality.bin",
+        "record_count": 16
       }
     }
   ],
