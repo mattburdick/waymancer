@@ -1,0 +1,1 @@
+import{k as e}from"./index-STZ2zzMy.js";var t=`kernelBlurVaryingDeclaration`,n=`varying vec2 sampleCoord{X};`;e.IncludesShadersStore[t]||(e.IncludesShadersStore[t]=n);
