@@ -1,0 +1,4 @@
+import{k as e}from"./index-6a_apkrT.js";var t=`logDepthDeclaration`,n=`#ifdef LOGARITHMICDEPTH
+uniform logarithmicDepthConstant: f32;varying vFragmentDepth: f32;
+#endif
+`;e.IncludesShadersStoreWGSL[t]||(e.IncludesShadersStoreWGSL[t]=n);
