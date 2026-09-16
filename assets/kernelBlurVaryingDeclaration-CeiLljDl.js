@@ -1,0 +1,1 @@
+import{k as e}from"./index-dD0r2J11.js";var t=`kernelBlurVaryingDeclaration`,n=`varying sampleCoord{X}: vec2f;`;e.IncludesShadersStoreWGSL[t]||(e.IncludesShadersStoreWGSL[t]=n);
